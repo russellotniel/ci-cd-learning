@@ -1,5 +1,29 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.1.1 (2025-09-17)
+
+
+### Features
+
+* add CI/CD pipeline foundation ([426b2e0](https://github.com/russellotniel/ci-cd-learning/commits/426b2e04800a1c05446a4bf47dd864b67319cb7f))
+* add CI/CD pipeline foundation ([234d8ba](https://github.com/russellotniel/ci-cd-learning/commits/234d8ba1556af53a6d373bd2779dfd84b1dad233))
+* added release workflow ([0371242](https://github.com/russellotniel/ci-cd-learning/commits/03712429eba09260d8ce2e76b4f984b060de20bf))
+* added release workflow ([de210d2](https://github.com/russellotniel/ci-cd-learning/commits/de210d2b6e2566a3d5857d30051857da9f69223f))
+* Merge pull request [#5](https://github.com/russellotniel/ci-cd-learning/issues/5) from russellotniel/dev ([ff085ec](https://github.com/russellotniel/ci-cd-learning/commits/ff085ecc14f8ec92135a4ebc7b89f27231dd3467))
+* test CI workflow with small change ([5f58020](https://github.com/russellotniel/ci-cd-learning/commits/5f58020837513568b4db0bb677d8fafb5cf652d6))
+* test CI workflow with small change ([85dccda](https://github.com/russellotniel/ci-cd-learning/commits/85dccda773a22e018cf2b3e9e10e0cff615bd61b))
+
+
+### Bug Fixes
+
+* aded setup buildx before build-push-action ([4b168d5](https://github.com/russellotniel/ci-cd-learning/commits/4b168d5e1ca1b0438d13cf6c254ba4bdf33aaee7))
+* aded setup buildx before build-push-action ([7f15be5](https://github.com/russellotniel/ci-cd-learning/commits/7f15be559abc7f0cd2fe1cfbeef443d9fbfa52b8))
+* use PAT for rlease workflow permissions ([8376a85](https://github.com/russellotniel/ci-cd-learning/commits/8376a858910b6f1419617a8fd25e91590cbfd20d))
+
+# Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

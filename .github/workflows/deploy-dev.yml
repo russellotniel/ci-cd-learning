@@ -8,31 +8,42 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     environment: development
-    
+
     steps:
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
+      - name: Generate metadata
+        id: meta
+        run: |
+          echo "TAG=dev-${{ github.run_number }}-$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
+          echo "TIMESTAMP=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Log in to Azure Container Registry
+        uses: docker/login-action@v3
         with:
-          node-version: '18'
-          cache: 'npm'
+          registry: ${{ secrets.AZURE_ENDPOINT }}
+          username: ${{ secrets.AZURE_USERNAME }}
+          password: ${{ secrets.AZURE_PASSWORD }}
       
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Build application
-        run: npm run build
-      
-      - name: Build Docker image
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ secrets.AZURE_ENDPOINT }}/ci-cd-learning:${{ steps.meta.outputs.TAG }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Display deployment info
         run: |
-          docker build -t ${{ secrets.REGISTRY_URL }}/ci-cd-learning:dev-${{ github.sha }} .
-      
-      - name: Push to registry
-        run: |
-          echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login ${{ secrets.REGISTRY_URL }} -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
-          docker push ${{ secrets.REGISTRY_URL }}/ci-cd-learning:dev-${{ github.sha }}
-      
-      # We'll add AKS deployment steps once Docker is working
-      - name: Deploy to AKS (placeholder)
-        run: echo "Would deploy to AKS here"
+          echo "Built image with tag: ${{ steps.meta.outputs.TAG }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Build number: ${{ github.run_number }}"
+          echo "Timestamp: ${{ steps.meta.outputs.TIMESTAMP }}

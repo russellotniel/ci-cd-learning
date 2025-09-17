@@ -10,5 +10,6 @@
     {"type": "test", "hidden": true}
   ],
   "commitUrlFormat": "https://github.com/russellotniel/ci-cd-learning/commits/{{hash}}",
-  "compareUrlFormat": "https://github.com/russellotniel/ci-cd-learning/compare/{{previousTag}}...{{currentTag}}"
+  "compareUrlFormat": "https://github.com/russellotniel/ci-cd-learning/compare/{{previousTag}}...{{currentTag}}",
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}} [skip ci]"
 }

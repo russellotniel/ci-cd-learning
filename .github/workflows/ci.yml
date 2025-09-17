@@ -9,17 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with: { node-version: "22" }
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
         
       - name: Install dependencies
         run: npm ci
@@ -30,22 +23,17 @@ jobs:
 
       - name: Run TypeScript type check
         run: npx tsc --noEmit
-      
-      - name: Security audit
-        run: npm audit --audit-level high
-        continue-on-error: false
 
-      - name: Check for outdated dependencies
-        run: npm outdated || true
-      
-      - name: Build application
-        run: npm run build
       - name: Run tests
         run: npm test --if-present
 
-      # Optional: build the Docker image but DON'T push
-      - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Security audit
+        run: npm audit --audit-level high
+        continue-on-error: false
+      
+      - name: Check for outdated dependencies
+        run: npm outdated || true
+
       - name: Build Docker image
         uses: docker/build-push-action@v5
         with:

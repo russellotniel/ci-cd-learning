@@ -1,0 +1,38 @@
+name: Deploy to Dev
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: development
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ secrets.REGISTRY_URL }}/ci-cd-learning:dev-${{ github.sha }} .
+      
+      - name: Push to registry
+        run: |
+          echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login ${{ secrets.REGISTRY_URL }} -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
+          docker push ${{ secrets.REGISTRY_URL }}/ci-cd-learning:dev-${{ github.sha }}
+      
+      # We'll add AKS deployment steps once Docker is working
+      - name: Deploy to AKS (placeholder)
+        run: echo "Would deploy to AKS here"

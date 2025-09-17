@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.495](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.494...v0.1.495) (2025-09-17)
+
 ### [0.1.494](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.493...v0.1.494) (2025-09-17)
 
 ### [0.1.493](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.492...v0.1.493) (2025-09-17)

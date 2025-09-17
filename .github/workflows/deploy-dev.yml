@@ -27,9 +27,8 @@ jobs:
       - name: Log in to Azure Container Registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ secrets.AZURE_ENDPOINT }}
-          username: ${{ secrets.AZURE_USERNAME }}
-          password: ${{ secrets.AZURE_PASSWORD }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -37,7 +36,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.AZURE_ENDPOINT }}/ci-cd-learning:${{ steps.meta.outputs.TAG }}
+            russellotniel/personal-repository:${{ steps.meta.outputs.TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 

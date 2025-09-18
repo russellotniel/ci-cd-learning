@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.534](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.533...v0.1.534) (2025-09-18)
+
+
+### Features
+
+* nambahin feature baru untuk naikin tag ([e126e87](https://github.com/russellotniel/ci-cd-learning/commits/e126e879ccbf647cfbb3b3f87b4af9bf7f779330))
+
 ### [0.1.533](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.532...v0.1.533) (2025-09-18)
 
 

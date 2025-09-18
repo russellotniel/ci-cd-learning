@@ -11,9 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Setup Node.js
+        id: setup-node
         uses: actions/setup-node@v4
         with: { node-version: "22" }
         
+      - name: Cache npm
+        id: npm-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            npm-${{ runner.os }}-${{ steps.setup-node.outputs.node-version }}-
+
       - name: Install dependencies
         run: npm ci
       

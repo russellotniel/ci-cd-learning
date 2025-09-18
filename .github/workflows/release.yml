@@ -7,7 +7,11 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-
+    # Skip if commit message starts with "chore(release)" or "merge:"
+    if: |
+      !startsWith(github.event.head_commit.message, 'chore(release)') &&
+      !startsWith(github.event.head_commit.message, 'merge:')
+    
     steps:
       - uses: actions/checkout@v4
         with:
@@ -57,6 +61,8 @@ jobs:
           push: true
           tags: |
             russellotniel/personal-repository:${{ steps.version.outputs.VERSION }}
+            russellotniel/personal-repository:latest
+            russellotniel/personal-repository:stable
           cache-from: type=gha
           cache-to: type=gha,mode=max
       
@@ -67,3 +73,27 @@ jobs:
           body_path: CHANGELOG.md
           generate_release_notes: true
           token: ${{ secrets.RELEASE_TOKEN }}
+  
+  # NEW: Auto-sync back to dev
+  sync-dev:
+    needs: release
+    runs-on: ubuntu-latest
+    if: success()
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Sync main to dev
+        run: |
+          git fetch origin main
+          git merge origin/main -m "merge: sync release from main [skip ci]" --no-ff
+          git push origin dev || echo "No changes to push"

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.538](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.537...v0.1.538) (2025-09-18)
+
+
+### Features
+
+* try to up the minor tag again ([202bad9](https://github.com/russellotniel/ci-cd-learning/commits/202bad9d0994848bf6850f660f14a4c6f1796949))
+
 ### [0.1.537](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.536...v0.1.537) (2025-09-18)
 
 

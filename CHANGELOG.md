@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.533](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.532...v0.1.533) (2025-09-18)
+
+
+### Bug Fixes
+
+* changed CI workflow to only run in dev ([6bdd03c](https://github.com/russellotniel/ci-cd-learning/commits/6bdd03ce050c1fd11889f18e645eb03251ac193f))
+* Merge pull request [#10](https://github.com/russellotniel/ci-cd-learning/issues/10) from russellotniel/fix/fix-ci-workflow ([0e514cb](https://github.com/russellotniel/ci-cd-learning/commits/0e514cb287d028d55a02145086fbae30dca6ee59))
+* Merge pull request [#11](https://github.com/russellotniel/ci-cd-learning/issues/11) from russellotniel/dev ([194d3ba](https://github.com/russellotniel/ci-cd-learning/commits/194d3ba885033b9cd6e51337417410785ea940a6))
+
 ### 0.1.532 (2025-09-18)
 
 

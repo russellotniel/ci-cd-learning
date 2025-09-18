@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.535](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.534...v0.1.535) (2025-09-18)
+
+
+### Bug Fixes
+
+* allow merge commits in commitlint config ([fa78262](https://github.com/russellotniel/ci-cd-learning/commits/fa782620942713e020a4b9c748cd4b43313129fb))
+* fixed workflows ([2dc53a7](https://github.com/russellotniel/ci-cd-learning/commits/2dc53a7156073c490530101e482f299dfdf1f81c))
+
 ### [0.1.534](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.533...v0.1.534) (2025-09-18)
 
 

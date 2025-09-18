@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.536](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.535...v0.1.536) (2025-09-18)
+
+
+### Features
+
+* added npm cache for all the workflows ([2547ac6](https://github.com/russellotniel/ci-cd-learning/commits/2547ac698a7a6ff7ff973340eed5dc864796e131))
+
 ### [0.1.535](https://github.com/russellotniel/ci-cd-learning/compare/v0.1.534...v0.1.535) (2025-09-18)
 
 

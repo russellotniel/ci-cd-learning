@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.1...v0.2.2) (2025-09-18)
+
+
+### Bug Fixes
+
+* naikin patch ([#23](https://github.com/russellotniel/ci-cd-learning/issues/23)) ([2143ddd](https://github.com/russellotniel/ci-cd-learning/commits/2143ddd1debc915f1d282634508e2fce883bcfc5))
+
 ### [0.2.1](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.0...v0.2.1) (2025-09-18)
 
 

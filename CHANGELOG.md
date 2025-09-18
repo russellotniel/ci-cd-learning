@@ -2,9 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.532 (2025-09-18)
+
+
+### Features
+
+* add CI/CD pipeline foundation ([426b2e0](https://github.com/russellotniel/ci-cd-learning/commits/426b2e04800a1c05446a4bf47dd864b67319cb7f))
+* add CI/CD pipeline foundation ([234d8ba](https://github.com/russellotniel/ci-cd-learning/commits/234d8ba1556af53a6d373bd2779dfd84b1dad233))
+* added release workflow ([0371242](https://github.com/russellotniel/ci-cd-learning/commits/03712429eba09260d8ce2e76b4f984b060de20bf))
+* added release workflow ([de210d2](https://github.com/russellotniel/ci-cd-learning/commits/de210d2b6e2566a3d5857d30051857da9f69223f))
+* Merge pull request [#5](https://github.com/russellotniel/ci-cd-learning/issues/5) from russellotniel/dev ([ff085ec](https://github.com/russellotniel/ci-cd-learning/commits/ff085ecc14f8ec92135a4ebc7b89f27231dd3467))
+* test CI workflow with small change ([5f58020](https://github.com/russellotniel/ci-cd-learning/commits/5f58020837513568b4db0bb677d8fafb5cf652d6))
+* test CI workflow with small change ([85dccda](https://github.com/russellotniel/ci-cd-learning/commits/85dccda773a22e018cf2b3e9e10e0cff615bd61b))
+
+
 ### Bug Fixes
 
-- prevent release workflow loop with skip condition ([f53bbd5](https://github.com/russellotniel/ci-cd-learning/commits/f53bbd5b530adb82c78ade7af4b9803cd144f7a6))
+* aded setup buildx before build-push-action ([4b168d5](https://github.com/russellotniel/ci-cd-learning/commits/4b168d5e1ca1b0438d13cf6c254ba4bdf33aaee7))
+* aded setup buildx before build-push-action ([7f15be5](https://github.com/russellotniel/ci-cd-learning/commits/7f15be559abc7f0cd2fe1cfbeef443d9fbfa52b8))
+* Merge pull request [#9](https://github.com/russellotniel/ci-cd-learning/issues/9) from russellotniel/dev ([dcd8752](https://github.com/russellotniel/ci-cd-learning/commits/dcd8752af11cd56231ebaaed47ff2cb0d93986b5))
+* merge untuk rapihin changelog ([257b9ce](https://github.com/russellotniel/ci-cd-learning/commits/257b9ce17af90657a6af5b2a10a60e364acfb8e1))
+* prevent release workflow loop with skip condition ([f53bbd5](https://github.com/russellotniel/ci-cd-learning/commits/f53bbd5b530adb82c78ade7af4b9803cd144f7a6))
+* prevent release workflow loop with skip condition ([069a873](https://github.com/russellotniel/ci-cd-learning/commits/069a87339f9b3172427507df8cb3e62fd4b6177a))
+* rapihin changelog ([abb5c63](https://github.com/russellotniel/ci-cd-learning/commits/abb5c637f7153f5537888b9cb33f7a1f9777a5c7))
+* use PAT for rlease workflow permissions ([8376a85](https://github.com/russellotniel/ci-cd-learning/commits/8376a858910b6f1419617a8fd25e91590cbfd20d))
+* use PAT for rlease workflow permissions ([148f5cd](https://github.com/russellotniel/ci-cd-learning/commits/148f5cd603c96bedbe1c60cdf97d7a5ae37fdd49))
 
 ### 0.1.1 (2025-09-17)
 

@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/russellotniel/ci-cd-learning/compare/v1.0.0...v1.1.0) (2025-09-19)
+
+
+### Features
+
+* bikin feature baru ([1063a44](https://github.com/russellotniel/ci-cd-learning/commit/1063a44972e27423c33042fe656800dd91843274)), closes [#35](https://github.com/russellotniel/ci-cd-learning/issues/35)
+* rapihin logout ([2f0c069](https://github.com/russellotniel/ci-cd-learning/commit/2f0c069deed5818f9fddf5aebe49cd12a1b0e7e0)), closes [#36](https://github.com/russellotniel/ci-cd-learning/issues/36)
+* rapihin sign up form ([3de7ee6](https://github.com/russellotniel/ci-cd-learning/commit/3de7ee6ffb210e92eb380c09e556f915e3846c69)), closes [#37](https://github.com/russellotniel/ci-cd-learning/issues/37)
+
 # [1.0.0](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.3...v1.0.0) (2025-09-19)
 
 

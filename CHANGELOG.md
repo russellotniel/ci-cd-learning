@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.3...v1.0.0) (2025-09-19)
+
+
+### Features
+
+* migrate from standard-version to semantic-release ([#33](https://github.com/russellotniel/ci-cd-learning/issues/33)) ([69e477b](https://github.com/russellotniel/ci-cd-learning/commit/69e477b6de8f3978d4cb412703cf0c39893d6fa9))
+
+
+### BREAKING CHANGES
+
+* Release process now uses semantic-release instead of standard-version
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

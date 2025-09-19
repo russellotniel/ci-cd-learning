@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.2...v0.2.3) (2025-09-19)
+
+
+### Features
+
+* adjusted main, protected landing pages and login form ([31d2b41](https://github.com/russellotniel/ci-cd-learning/commits/31d2b411b9f9d2fd4774702820a48b14354238aa))
+
+
+### Bug Fixes
+
+* made a fix in landing page ([#27](https://github.com/russellotniel/ci-cd-learning/issues/27)) ([e667b05](https://github.com/russellotniel/ci-cd-learning/commits/e667b05bd54240e673878cc547261b1e707a3f5f))
+
 ### [0.2.2](https://github.com/russellotniel/ci-cd-learning/compare/v0.2.1...v0.2.2) (2025-09-18)
 
 

@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/russellotniel/ci-cd-learning/compare/v1.2.0...v1.2.1) (2025-09-19)
+
+
+### Bug Fixes
+
+* try up to 1.2.1 ([b016aaa](https://github.com/russellotniel/ci-cd-learning/commit/b016aaade1f08d0c315becf126a0922ae2ac62d3))
+
 # [1.2.0](https://github.com/russellotniel/ci-cd-learning/compare/v1.1.1...v1.2.0) (2025-09-19)
 
 

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/russellotniel/ci-cd-learning/compare/v1.1.1...v1.2.0) (2025-09-19)
+
+
+### Features
+
+* update ci/cd ([f0ba407](https://github.com/russellotniel/ci-cd-learning/commit/f0ba407147b4898fd072b648da65dbf17286e535))
+
 ## [1.1.1](https://github.com/russellotniel/ci-cd-learning/compare/v1.1.0...v1.1.1) (2025-09-19)
 
 

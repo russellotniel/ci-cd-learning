@@ -53,7 +53,7 @@ export function LoginForm({
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
-            Enter your email
+            Enter your email bro
           </CardDescription>
         </CardHeader>
         <CardContent>
